@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		992DF3F06ACF5C92C1A9DFD2 /* Pods_SocketChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F6A8DB06719A3AB9A8D313 /* Pods_SocketChat.framework */; };
 		BA4C22758AFF57C62C7E6F00 /* Pods_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA7FF848037CE984486FFFE /* Pods_Chat.framework */; };
 		D943EE11535A0D594B2C8E4F /* Pods_SocketChat_SocketChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C754C1A7F43E5CCC67CD600 /* Pods_SocketChat_SocketChatTests.framework */; };
 		FAF0F3FF28C877F400113D35 /* SocketChat.docc in Sources */ = {isa = PBXBuildFile; fileRef = FAF0F3FE28C877F400113D35 /* SocketChat.docc */; };
@@ -78,6 +77,8 @@
 		FAF0F63928C87CA000113D35 /* SocketChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0F63528C87CA000113D35 /* SocketChatManager.swift */; };
 		FAF0F63A28C87CA000113D35 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0F63628C87CA000113D35 /* NetworkManager.swift */; };
 		FAF0F63B28C87CA000113D35 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0F63728C87CA000113D35 /* Reachability.swift */; };
+		FAF0F63C28C8A2D600113D35 /* Pods_SocketChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F6A8DB06719A3AB9A8D313 /* Pods_SocketChat.framework */; };
+		FAF0F63D28C8A2D600113D35 /* Pods_SocketChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 47F6A8DB06719A3AB9A8D313 /* Pods_SocketChat.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,20 @@
 			remoteInfo = SocketChat;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAF0F63E28C8A2D600113D35 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAF0F63D28C8A2D600113D35 /* Pods_SocketChat.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0CC7F41DF2E66FBAD11AF362 /* Pods-SocketChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketChat.release.xcconfig"; path = "Target Support Files/Pods-SocketChat/Pods-SocketChat.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				992DF3F06ACF5C92C1A9DFD2 /* Pods_SocketChat.framework in Frameworks */,
+				FAF0F63C28C8A2D600113D35 /* Pods_SocketChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +566,7 @@
 				FAF0F3F628C877F400113D35 /* Sources */,
 				FAF0F3F728C877F400113D35 /* Frameworks */,
 				FAF0F3F828C877F400113D35 /* Resources */,
+				FAF0F63E28C8A2D600113D35 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -911,7 +927,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -968,7 +984,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -994,7 +1010,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1024,7 +1040,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1095,6 +1111,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1129,6 +1146,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
