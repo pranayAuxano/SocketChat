@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SocketChat"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "Use this for Socket chat."
 
   # This description is used to generate tags and improve search results.
@@ -96,7 +96,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "SocketChat/**/*.{h,m,swift}"
+  # spec.source_files  = "Classes", "SocketChat/**/*.{h,m,swift}"
+
+	spec.source_files  = "SocketChat/**/*.{h,m,swift}"
 
   # spec.exclude_files = "Classes/Exclude"
 
