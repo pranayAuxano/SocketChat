@@ -146,8 +146,8 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
-	s.framework = "UIKit"
-	s.dependency 'Socket.IO-Client-Swift'
-	s.dependency 'ProgressHUD'
+	spec.framework = "UIKit"
+	spec.dependency 'Socket.IO-Client-Swift'
+	spec.dependency 'ProgressHUD'
 
 end
