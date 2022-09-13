@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
 	spec.name         = "SocketChat"
-  	spec.version      = "0.0.4"
+  	spec.version      = "0.0.5"
   	spec.summary      = "Use this for Socket chat."
 
   # This description is used to generate tags and improve search results.
@@ -88,7 +88,9 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  	spec.source       = { :git => "https://github.com/pranayprajapati/SocketChat.git", :tag => "#{spec.version}" }
+  #	spec.source       = { :git => "https://github.com/pranayprajapati/SocketChat.git", :tag => "#{spec.version}" }
+
+	  	spec.source       = { :git => "https://github.com/pranayprajapati/SocketChat.git", :tag => version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -150,4 +152,6 @@ Pod::Spec.new do |spec|
 	spec.dependency 'Socket.IO-Client-Swift'
 	spec.dependency 'ProgressHUD'
 
+
+spec.source_files  = 'SocketChat/Pod/*'
 end
