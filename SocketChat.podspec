@@ -15,20 +15,22 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SocketChat"
-  spec.version      = "0.0.3"
-  spec.summary      = "Use this for Socket chat."
+	spec.name         = "SocketChat"
+  	spec.version      = "0.0.4"
+  	spec.summary      = "Use this for Socket chat."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-	This is use for real time communication in chat using Socket.io
+
+  	spec.description  = <<-DESC
+		This is use for real time communication in chat using Socket.io
                    DESC
 
-  spec.homepage     = "https://github.com/pranayprajapati/SocketChat"
+  	spec.homepage     = "https://github.com/pranayprajapati/SocketChat"
+
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -66,7 +68,8 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-	spec.platform     = :ios, "5.0"
+
+	spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -85,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/pranayprajapati/SocketChat.git", :tag => "#{spec.version}" }
+  	spec.source       = { :git => "https://github.com/pranayprajapati/SocketChat.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -138,9 +141,13 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  #	spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+
+	s.framework = "UIKit"
+	s.dependency 'Socket.IO-Client-Swift'
+	s.dependency 'ProgressHUD'
 
 end

@@ -7,12 +7,6 @@ target 'Chat' do
 
 	# Pods for Chat
 
-	pod 'Socket.IO-Client-Swift'
-	#pod 'EasyToast'
-  	
-	# Progress HUD
-	pod 'ProgressHUD'
-
 end
 
 target 'SocketChat' do
@@ -20,6 +14,12 @@ target 'SocketChat' do
   use_frameworks!
 
   # Pods for SocketChat
+
+	pod 'Socket.IO-Client-Swift'
+	#pod 'EasyToast'
+  	
+	# Progress HUD
+	pod 'ProgressHUD'
 
   target 'SocketChatTests' do
     # Pods for testing
