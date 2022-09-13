@@ -153,5 +153,5 @@ Pod::Spec.new do |spec|
 	spec.dependency 'ProgressHUD'
 
 
-spec.source_files  = 'SocketChat/Pod/*'
+	#spec.source_files  = 'SocketChat/Pod/*'
 end
