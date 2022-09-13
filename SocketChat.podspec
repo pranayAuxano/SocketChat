@@ -88,9 +88,9 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  #	spec.source       = { :git => "https://github.com/pranayprajapati/SocketChat.git", :tag => "#{spec.version}" }
+  	spec.source       = { :git => "https://github.com/pranayprajapati/SocketChat.git", :tag => "#{spec.version}" }
 
-	  	spec.source       = { :git => "https://github.com/pranayprajapati/SocketChat.git", :tag => version.to_s }
+  # 	spec.source       = { :git => "https://github.com/pranayprajapati/SocketChat.git", :tag => version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

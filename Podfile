@@ -5,6 +5,11 @@ target 'Chat' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  pod 'Socket.IO-Client-Swift'
+  #pod 'EasyToast'
+    
+  # Progress HUD
+  pod 'ProgressHUD'
 	# Pods for Chat
 
 end
@@ -15,11 +20,7 @@ target 'SocketChat' do
 
   # Pods for SocketChat
 
-	pod 'Socket.IO-Client-Swift'
-	#pod 'EasyToast'
-  	
-	# Progress HUD
-	pod 'ProgressHUD'
+	
 
   target 'SocketChatTests' do
     # Pods for testing
