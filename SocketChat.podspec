@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
 
   	spec.description  = <<-DESC
 		This is use for real time communication in chat using Socket.io
-                   DESC
+        	DESC
 
   	spec.homepage     = "https://github.com/pranayprajapati/SocketChat"
 
@@ -141,7 +141,7 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  #	spec.requires_arc = true
+  	spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
