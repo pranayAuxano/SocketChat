@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
 	spec.name         = "SocketChat"
-  	spec.version      = "0.0.5"
+  	spec.version      = "0.0.6"
   	spec.summary      = "Use this for Socket chat."
 
   # This description is used to generate tags and improve search results.
@@ -56,10 +56,10 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Leo" => "agskishor@gmail.com" }
-  # Or just: spec.author    = "Leo"
-  # spec.authors            = { "Leo" => "agskishor@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/Leo"
+  spec.author             = { "pranayprajapati" => "prajapatipranay.ios@gmail.com" }
+  # Or just: spec.author    = "pranayprajapati"
+  # spec.authors            = { "pranayprajapati" => "prajapatipranay.ios@gmail.com" }
+  # spec.social_media_url   = "https://twitter.com/pranayprajapati"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
